@@ -22,7 +22,7 @@ export default function Home() {
           london startup ecosystem.
           <br />
           personally, i&apos;m searching for a story that can beat my current
-          favourite (one piece).
+          favourite (one piece)
         </p>
       </div>
     </div>
