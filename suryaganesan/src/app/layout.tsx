@@ -27,18 +27,22 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body data-theme="corporate">
-        <div className="flex flex-row gap-4 py-10 justify-center">
-          <Link href="/" className="row-span-1">
-            home
-          </Link>
-          <Link href="/journal" className="row-span-1">
-            journal
-          </Link>
-          <Link href="/pictures" className="row-span-1">
-            pinterest
-          </Link>
+        <div className="font-times flex flex-col w-full justify-center">
+          <div className="flex flex-col w-full items-center">
+            <div className="flex flex-row gap-4 py-16 px-4 w-6/12 justify-start">
+              <Link href="/" className="row-span-1">
+                home
+              </Link>
+              <Link href="/journal" className="row-span-1">
+                journal
+              </Link>
+              <Link href="/pinterest" className="row-span-1">
+                pinterest
+              </Link>
+            </div>
+          </div>
+          {children}
         </div>
-        {children}
       </body>
     </html>
   );
