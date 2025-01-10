@@ -29,7 +29,7 @@ export default function RootLayout({
       <body data-theme="corporate">
         <div className="font-times flex flex-col w-full justify-center">
           <div className="flex flex-col w-full items-center">
-            <div className="flex flex-row gap-4 py-16 px-4 w-6/12 justify-start">
+            <div className="flex flex-row gap-4 py-16 px-4 w-7/12 justify-start">
               <Link href="/" className="row-span-1">
                 home
               </Link>
