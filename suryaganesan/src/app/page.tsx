@@ -1,3 +1,4 @@
+import Image from "next/image";
 import VacantButton from "./components/vacantButton";
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
           llm-based web applications using python, react and langchain. i am
           deeply passionate about <i>agentic ai</i> and its potential to solve
           hard problems. my goal is to work with similarly passionate teams
-          tackling new challenges with software and become a better builder.
+          tackling new challenges with software and getting better as a builder.
           <br />
           <br />
           one of my favourite things to do before building new ideas is to judge
@@ -80,6 +81,72 @@ export default function Home() {
           </li>
         </ul>
         <h2 className="text-xl text-left pb-5">projects</h2>
+        <div className="grid grid-cols-3 gap-x-2 gap-y-2">
+          <div className="card rounded-2xl shadow-xl">
+            <figure className="h-full w-full">
+              <Image
+                src="/images/polly.png"
+                alt="a picture of a cat"
+                layout="responsive"
+                width={400}
+                height={300}
+                objectFit="cover"
+              />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">cat</h2>
+              <p>a picture of a cat</p>
+            </div>
+          </div>
+          <div className="card rounded-2xl shadow-xl">
+            <figure className="h-full w-full">
+              <Image
+                src="/images/polly.png"
+                alt="a picture of a dog"
+                layout="responsive"
+                width={400}
+                height={300}
+                objectFit="cover"
+              />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">dog</h2>
+              <p>a picture of a dog</p>
+            </div>
+          </div>
+          <div className="card rounded-2xl shadow-xl">
+            <figure className="h-full w-full">
+              <Image
+                src="/images/polly.png"
+                alt="a picture of a house"
+                layout="responsive"
+                width={400}
+                height={300}
+                objectFit="cover"
+              />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">house</h2>
+              <p>a picture of a house</p>
+            </div>
+          </div>
+          <div className="card rounded-2xl shadow-xl">
+            <figure className="h-full w-full">
+              <Image
+                src="/images/polly.png"
+                alt="a picture of a car"
+                layout="responsive"
+                width={400}
+                height={300}
+                objectFit="cover"
+              />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">car</h2>
+              <p>a picture of a car</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
