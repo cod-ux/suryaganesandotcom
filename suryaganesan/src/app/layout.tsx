@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Image from "next/image";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,6 +25,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const size = 21;
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body data-theme="corporate">
@@ -42,6 +44,41 @@ export default function RootLayout({
             </div>
           </div>
           {children}
+        </div>
+        <div className="text-center font-times">Contact</div>
+        <div className="flex flex-row gap-3 p-3 pb-14 justify-center">
+          <a
+            href="https://www.linkedin.com/in/suryagganesan/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Image
+              src="icons/linkedin.svg"
+              alt="linkedin"
+              width={size}
+              height={size}
+            />
+          </a>
+          <a href="https://github.com/cod-ux" target="_blank" rel="noreferrer">
+            <Image
+              src="icons/github.svg"
+              alt="github"
+              width={size}
+              height={size}
+            />
+          </a>
+          <a
+            href="https://twitter.com/surya_ganesan"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Image
+              src="icons/twitter.svg"
+              alt="twitter"
+              width={size}
+              height={size}
+            />
+          </a>
         </div>
       </body>
     </html>
