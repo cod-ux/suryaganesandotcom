@@ -1,12 +1,16 @@
-import Image from "next/image";
 import VacantButton from "./components/vacantButton";
 
 export default function Home() {
-  const jobListClass = "pb-2";
+  const jobListClass = "py-2";
+  const projectClass =
+    "collapse collapse-arrow border-base-200 bg-base-100 rounded-2xl border";
+  const projectTitleClass = "collapse-title text-base font-medium";
+  const projectContentClass = "collapse-content";
+
   return (
     <div className="flex min-h-screen w-full justify-center">
-      <div className="px-4 py-2 w-7/12">
-        <h1 className="text-3xl text-left">surya g ganesan</h1>
+      <div className="px-4 py-2 w-5/12">
+        <h1 className="text-2xl text-left">surya g ganesan</h1>
         <p className="py-7 text-left text-base pb-12">
           i&apos;m a software engineer with 2 years of experience building
           llm-based web applications using python, react and langchain. i am
@@ -16,13 +20,13 @@ export default function Home() {
           <br />
           <br />
           one of my favourite things to do before building new ideas is to judge
-          how important the problem i am solving is by having lots of
-          conversations wilth potential users. i am most excited about projects
-          that will solve painful problems for users. in my free time, i love
-          immersing in great stories - anime, video games, movies, etc.
+          how important the problem is by having lots of conversations wilth
+          potential users. i am most excited about projects that will solve
+          painful problems for users. in my free time, i love immersing in great
+          stories - anime, video games, movies, etc.
         </p>
         <h2 className="text-xl text-left pb-5">jobs</h2>
-        <p className="text-left pb-1">my professional journey so far</p>
+        <p className="text-left pb-2">my professional journey so far</p>
         <ul className="list-disc pl-7 pb-12">
           <li className="">
             currently working @ <VacantButton />{" "}
@@ -71,7 +75,7 @@ export default function Home() {
             <span className="text-stone-600 font-semibold">marketing</span> @{" "}
             <a
               className="link text-stone-500"
-              href="https://www.sap.com/uk/index.html?url_id=auto_hp_redirect_uk"
+              href="https://www.easytransferglobal.com/"
               target="_blank"
             >
               easy transfer
@@ -81,69 +85,37 @@ export default function Home() {
           </li>
         </ul>
         <h2 className="text-xl text-left pb-5">projects</h2>
-        <div className="grid grid-cols-3 gap-x-2 gap-y-2">
-          <div className="card rounded-2xl shadow-xl">
-            <figure className="h-full w-full">
-              <Image
-                src="/images/polly.png"
-                alt="a picture of a cat"
-                layout="responsive"
-                width={400}
-                height={300}
-                objectFit="cover"
-              />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">cat</h2>
-              <p>a picture of a cat</p>
+        <div className="grid grid-cols-2 gap-5">
+          <div className={projectClass}>
+            <div className={projectTitleClass}>ai voice agent</div>
+            <div className={projectContentClass}>
+              <p>temp content</p>
             </div>
           </div>
-          <div className="card rounded-2xl shadow-xl">
-            <figure className="h-full w-full">
-              <Image
-                src="/images/polly.png"
-                alt="a picture of a dog"
-                layout="responsive"
-                width={400}
-                height={300}
-                objectFit="cover"
-              />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">dog</h2>
-              <p>a picture of a dog</p>
+          <div className={projectClass}>
+            <div className={projectTitleClass}>voice agent testing tool</div>
+            <div className={projectContentClass}>
+              <p>temp content</p>
             </div>
           </div>
-          <div className="card rounded-2xl shadow-xl">
-            <figure className="h-full w-full">
-              <Image
-                src="/images/polly.png"
-                alt="a picture of a house"
-                layout="responsive"
-                width={400}
-                height={300}
-                objectFit="cover"
-              />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">house</h2>
-              <p>a picture of a house</p>
+          <div className={projectClass}>
+            <div className={projectTitleClass}>
+              code gen agent for data analysis
+            </div>
+            <div className={projectContentClass}>
+              <p>temp content</p>
             </div>
           </div>
-          <div className="card rounded-2xl shadow-xl">
-            <figure className="h-full w-full">
-              <Image
-                src="/images/polly.png"
-                alt="a picture of a car"
-                layout="responsive"
-                width={400}
-                height={300}
-                objectFit="cover"
-              />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">car</h2>
-              <p>a picture of a car</p>
+          <div className={projectClass}>
+            <div className={projectTitleClass}>ai generated blog posts</div>
+            <div className={projectContentClass}>
+              <p>temp content</p>
+            </div>
+          </div>
+          <div className={projectClass}>
+            <div className={projectTitleClass}>ai generated blog posts</div>
+            <div className={projectContentClass}>
+              <p>temp content</p>
             </div>
           </div>
         </div>
