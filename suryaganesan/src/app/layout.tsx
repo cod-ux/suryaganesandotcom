@@ -46,7 +46,7 @@ export default function RootLayout({
           {children}
         </div>
         <div className="text-center font-times">Contact</div>
-        <div className="flex flex-row gap-3 p-3 pb-14 justify-center">
+        <div className="flex flex-row gap-3 p-3 pb-8 justify-center">
           <a
             href="https://www.linkedin.com/in/suryagganesan/"
             target="_blank"
