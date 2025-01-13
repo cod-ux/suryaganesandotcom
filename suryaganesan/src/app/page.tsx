@@ -17,10 +17,9 @@ export default function Home() {
           <br />
           <br />
           one of my favourite things to do before building new ideas is to judge
-          how important the problem is by having lots of conversations wilth
-          potential users. i am most excited about projects that will solve
-          painful problems for users. in my free time, i love immersing in great
-          stories - anime, video games, movies, etc.
+          how important the problem is. i am most excited about projects that
+          solve painful problems for users. in my free time, i love immersing in
+          great stories - anime, video games, movies, etc.
         </p>
 
         <div className="pb-12">
