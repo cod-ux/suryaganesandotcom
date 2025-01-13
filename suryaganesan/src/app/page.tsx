@@ -5,7 +5,7 @@ import VacantButton from "./components/vacantButton";
 export default function Home() {
   return (
     <div className="flex min-h-screen w-full justify-center">
-      <div className="px-4 py-2 w-5/12">
+      <div className="px-4 py-2 w-11/12 justify-center md:w-11/12 lg:w-5/12 xl:w-5/12 2xl:w-5/12">
         <h1 className="text-2xl text-left">surya g ganesan</h1>
         <p className="pt-7 text-left text-base pb-12">
           i&apos;m a software engineer with 2 years of experience building

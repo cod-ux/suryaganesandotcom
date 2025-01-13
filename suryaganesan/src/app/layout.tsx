@@ -31,7 +31,7 @@ export default function RootLayout({
       <body data-theme="corporate">
         <div className="font-times flex flex-col w-full justify-center">
           <div className="flex flex-col w-full items-center">
-            <div className="flex flex-row gap-4 py-16 px-4 w-5/12 justify-start">
+            <div className="flex flex-row gap-4 py-16 px-4 justify-start w-11/12 md:w-11/12 lg:w-5/12 xl:w-5/12 2xl:w-5/12">
               <Link href="/" className="row-span-1">
                 home
               </Link>
@@ -68,7 +68,7 @@ export default function RootLayout({
             />
           </a>
           <a
-            href="https://twitter.com/surya_ganesan"
+            href="https://x.com/suryaganesan925"
             target="_blank"
             rel="noreferrer"
           >

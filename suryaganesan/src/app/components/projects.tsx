@@ -1,27 +1,71 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 
 const projects = [
   {
     id: "project1",
+    title: "voice agent optimisation tool (wip)",
+    name: "??",
+    description:
+      "work in progress. a typescript based prompt optimisation tool for voice agents.",
+    techStack: ["typescript", "langchain"],
+    link: "https://github.com/cod-ux/voice-agent-optimizer",
+  },
+  {
+    id: "project2",
     title: "ai voice agent",
     name: "rio",
     description:
       "built a llama-powered voice agent, rio, that connects to your company's database and answers any finance question over a phone call. developed this during meta's llama impact hackathon in london.",
-    techStack: ["python", "langchain", "openai", "fastapi", "pydantic"],
+    techStack: ["python", "langchain", "pipecat", "flask", "pydantic"],
     link: "https://github.com/cod-ux/rio-voice-agent",
-    image: "/rio.png",
+    image: "/images/rio.jpg",
+    imageWidth: 300,
   },
-  {
-    id: "project2",
-    title: "voice agent testing tool",
-    description: "temp content",
-  },
+
   {
     id: "project3",
-    title: "code gen agent for data analysis",
-    description: "temp content",
+    title: "coding assistant for data analysis",
+    name: "pepper",
+    description:
+      "web app that runs data analysis from natural language queries.",
+    techStack: ["python", "langgraph", "pydantic", "streamlit", "supabase"],
+    link: "https://github.com/cod-ux/pepper-ai",
+    image: "/images/pepper.png",
+    imageWidth: 300,
+    website: "https://www.pepperapp.co.uk",
+    demo: "https://youtu.be/4Jv0DpR9PQs",
+  },
+  {
+    id: "project4",
+    title: "research assistant for policy analysis",
+    name: "polly",
+    description:
+      "full stack chatbot based on retrieval augmented generation, that combs through research papers to answer questions. built and deployed this for the 15 person resarch team at reform think tank.",
+    techStack: [
+      "nextjs",
+      "django",
+      "langchain",
+      "python",
+      "typescript",
+      "chromadb",
+    ],
+    link: "https://github.com/cod-ux/polly-agent",
+    image: "/images/polly.png",
+    imageWidth: 300,
+  },
+  {
+    id: "project5",
+    title: "budgeting app that roasts you",
+    name: "guilty",
+    description:
+      "cross platform mobile app that connects with your bank account to roast you when you overspend.",
+    techStack: ["flutter", "python", "flask", "plaid", "firebase"],
+    link: "https://github.com/cod-ux/the-guilty-app",
+    image: "/images/guilty.webp",
+    imageWidth: 200,
   },
 ];
 
@@ -57,7 +101,58 @@ const Projects: React.FC = () => {
           <div className={projectTitleClass}>{project.title}</div>
           {openProjects[project.id] && (
             <div className={projectContentClass}>
-              <p>{project.description}</p>
+              <p className="font-medium text-lg italic pb-2">{project.name}</p>
+              <p className="pb-2">{project.description}</p>
+              <p className="pb-2 text-sm">
+                <span className="font-semibold">tech stack:</span>{" "}
+                {project.techStack.join(", ")}
+              </p>
+              <div className="pb-4">
+                <div>
+                  <a
+                    className="link text-blue-600"
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    repo
+                  </a>
+                </div>
+                <div>
+                  {project.website && (
+                    <a
+                      className="link text-blue-600"
+                      href={project.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      website
+                    </a>
+                  )}
+                </div>
+                <div>
+                  {project.demo && (
+                    <a
+                      className="link text-blue-600"
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      demo
+                    </a>
+                  )}
+                </div>
+              </div>
+
+              {project.image && (
+                <Image
+                  className=" rounded-2xl"
+                  src={project.image}
+                  alt={project.title}
+                  width={project.imageWidth}
+                  height={project.imageWidth}
+                />
+              )}
             </div>
           )}
         </div>
