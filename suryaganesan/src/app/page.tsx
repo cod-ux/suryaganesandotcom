@@ -10,9 +10,10 @@ export default function Home() {
         <p className="pt-7 text-left text-base pb-12">
           i&apos;m a software engineer with 2 years of experience building
           llm-based web applications using python, react and langchain. i am
-          deeply passionate about <i>agentic ai</i> and its potential to solve
-          hard problems. my goal is to work with similarly passionate teams
-          tackling new challenges with software and getting better as a builder.
+          especially passionate about <i>agentic ai</i> and its potential to
+          solve hard problems. my goal is to work with similarly passionate
+          teams tackling new challenges with software and getting better as a
+          builder.
           <br />
           <br />
           one of my favourite things to do before building new ideas is to judge

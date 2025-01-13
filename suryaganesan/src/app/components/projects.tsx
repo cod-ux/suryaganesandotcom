@@ -18,7 +18,7 @@ const projects = [
     title: "ai voice agent",
     name: "rio",
     description:
-      "built a llama-powered voice agent, rio, that connects to your company's database and answers any finance question over a phone call. developed this during meta's llama impact hackathon in london.",
+      "built a llama-powered voice agent, rio, that connects to your company's database that can answer questions in real-time by querying a database using LLM-generated SQL code. developed this during meta's llama impact hackathon in london.",
     techStack: ["python", "langchain", "pipecat", "flask", "pydantic"],
     link: "https://github.com/cod-ux/rio-voice-agent",
     image: "/images/rio.jpg",
