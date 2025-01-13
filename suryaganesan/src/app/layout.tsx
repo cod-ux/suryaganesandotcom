@@ -15,9 +15,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Surya Ganesan's Personal Website",
+  title: "Welcome to Surya Ganesan's",
   description:
     "A Next js + Tpescript website that showcases my work and thoughts",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -28,6 +31,9 @@ export default function RootLayout({
   const size = 21;
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body data-theme="corporate">
         <div className="font-times flex flex-col w-full justify-center">
           <div className="flex flex-col w-full items-center">
