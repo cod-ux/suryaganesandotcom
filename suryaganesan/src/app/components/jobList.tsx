@@ -8,7 +8,7 @@ const jobs = [
     title: "swe consultant",
     company: "reform think tank",
     description:
-      "i developed a full stack RAG for the research team using nextjs, django and langchain which resulted in 30% lesser research time for the team.",
+      "i developed a full stack RAG app for the research team using nextjs, django and langchain which resulted in 30% lesser research time for the team.",
     link: "https://www.github.com/cod-ux/polly-agent",
   },
   {
