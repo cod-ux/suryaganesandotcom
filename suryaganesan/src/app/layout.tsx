@@ -15,9 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Welcome to Surya Ganesan's",
-  description:
-    "A Next js + Tpescript website that showcases my work and thoughts",
+  title: "@Surya Ganesan's",
+  description: "Home to my thoughts and work",
   icons: {
     icon: "/favicon.ico",
   },
